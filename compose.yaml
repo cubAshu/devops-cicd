@@ -1,0 +1,9 @@
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: devops-delivery-api:1.0.0
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
